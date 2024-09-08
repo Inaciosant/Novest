@@ -7,7 +7,7 @@ function sendToWhatsApp(productName) {
     window.open(url, '_blank');
 }
 
-
+//
 
  
 
