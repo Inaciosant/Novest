@@ -14,7 +14,7 @@
     border-radius: 6px 6px 0 0;
   }
   
-  .card-image:hover {
+  .img-fluid:hover {
     transform: scale(0.98);
   }
   
@@ -61,6 +61,17 @@
     font-style: normal;
   }
 
-  .pag-produtos{
-    
-  }
+.form-control{
+  width:50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-select{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

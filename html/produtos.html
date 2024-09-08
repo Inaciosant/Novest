@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <!-- Required meta tags -->
+     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/produtos.css">
@@ -22,25 +23,42 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link "  href="/html/index.html">Home</a>
-          <a class="nav-link" href="#">Contatos</a>
-          <a class="nav-link active" aria-current="page" href="/produtos.html">Produtos</a>
+          <a class="nav-link" href="/html/contatos.html">Contatos</a>
+          <a class="nav-link active" aria-current="page" href="/html/produtos.html">Produtos</a>
         </div>
       </div>
     </nav>
 
     <main class="pag-produtos">
+      <select id="sortOptions" class="form-select" style="width:50% ;
+      display: flex;
+      justify-content: center;
+      align-items: center; margin-left: 25%;
+      text-align: center;">
+        <option value="asc">Ordenar por preço: Menor para Maior</option>
+        <option value="desc">Ordenar por preço: Maior para Menor</option>
+      </select>
+      <div class="col-12 mb-3"></div>
+        <input type="text" id="searchBar" class="form-control" placeholder="Pesquisar produtos" style="width:50% ;
+        display: flex;
+        justify-content: center;
+        align-items: center; margin-left: 25%;
+        text-align: center;"
+        >
+      </div>
+    </div>
 
       <div class="container mt-3">
         
-      <div class="row">
+      <div class="row" id="productContainer">
 
         <div class="col-6 col-lg-3">
           <div class="card" style="width: 90%;">
-            <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Carteira Masculina em couro</h5>
-              <p class="card-text">R$ 59.99</p>
-              <a href="#" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+            <img src="/img/produtos/prod1.png" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">Mochila Masculina</h5>
+              <p class="card-text">R$ 169.99</p>
+              <a href="#" onclick="sendToWhatsApp ('xxxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
             </div>
           </div>
         </div>
@@ -49,7 +67,7 @@
           <div class="card"style="width: 90%;" >
             <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Carteira Masculina em couro</h5>
+              <h5 class="card-title">Carteira Masculina </h5>
               <p class="card-text">R$ 59.99</p>
               <a href="#" onclick="sendToWhatsApp ('Carteira Masculina em couro (modelo 23)')"" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;" >COMPRAR</a>
             </div>
@@ -58,10 +76,10 @@
 
         <div class="col-6 col-lg-3">
           <div class="card" style="width: 90%;">
-            <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
+            <img src="/img/produtos/mochilafotcafe.png" class="img-fluid" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Carteira Masculina em couro</h5>
-              <p class="card-text">R$ 59.99</p>
+              <h5 class="card-title">Mochila De fotografo</h5>
+              <p class="card-text">R$ 599.99</p>
               <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
             </div>
           </div>
@@ -69,34 +87,137 @@
 
         <div class="col-6 col-lg-3">
           <div class="card" style="width: 90%;">
-            <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
+            <img src="/img/produtos/Mala1.png" class="img-fluid" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Carteira Masculina em couro</h5>
-              <p class="card-text">R$ 59.99</p>
+              <h5 class="card-title">Mala de viagem</h5>
+              <p class="card-text">R$ 699.99</p>
               <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
             </div>
           </div>
         </div>
 
-      </div>
-      </div>
-      
+      <div class="row">
     
 
         
+     
+  
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 90%;">
+              <img src="/img/produtos/prod1.png" class="img-fluid" alt="...">
+              <div class="card-body" style="height: 40%;">
+                <h5 class="card-title">Mochila Masculina</h5>
+                <p class="card-text" id="valor">R$ 169.99</p>
+                <a href="#" onclick="sendToWhatsApp ('xxxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="card"style="width: 90%;" >
+              <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Carteira Masculina </h5>
+                <p class="card-text">R$ 19.99</p>
+                <a href="#" onclick="sendToWhatsApp ('Carteira Masculina em couro (modelo 23)')"" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;" >COMPRAR</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 90%;">
+              <img src="/img/produtos/mochilafotcafe.png" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mochila De fotografo</h5>
+                <p class="card-text">R$ 599.99</p>
+                <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="card" style="width: 90%;">
+              <img src="/img/produtos/Mala1.png" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mala de viagem</h5>
+                <p class="card-text">R$ 699.99</p>
+                <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        </div>
+      </div>
+      
     </main>
 
     
         
     </body>
+    <script src="/js/index.js"></script>
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/js/index.js"></script>
+    
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<!--Script mensagem-->
-<script>
+
+<Script>
+  document.getElementById('searchBar').addEventListener('input', function() {
+  // Pegando o valor digitado
+  let searchQuery = this.value.toLowerCase();
   
+  // Pegando todas as colunas de produtos
+  let products = document.querySelectorAll('#productContainer .col-6');
+
+  // Loop pelos produtos para comparar os nomes
+  products.forEach(function(product) {
+    // Pegando o título do produto
+    let title = product.querySelector('.card-title').textContent.toLowerCase();
+
+    // Se o título do produto contém o valor da busca, mostramos o produto
+    if (title.includes(searchQuery)) {
+      product.style.display = 'block'; // Mostra o produto
+    } else {
+      product.style.display = 'none';
+       // Esconde o produto
+    }
+  });
+});
+</Script>
+
+<script>
+  document.getElementById('sortOptions').addEventListener('change', function() {
+    let sortOrder = this.value; // Captura o valor da opção selecionada (asc ou desc)
+    
+    // Pegue o container onde os produtos estão
+    let productContainer = document.getElementById('productContainer');
+    
+    // Pegar todos os produtos e convertê-los para um array
+    let products = Array.from(productContainer.querySelectorAll('.col-6')); // Use a classe correta
+    
+    // Ordenar os produtos com base no preço
+    products.sort(function(a, b) {
+      let priceA = parseFloat(a.querySelector('.card-text').textContent.replace('R$', '').replace(',', '.'));
+      let priceB = parseFloat(b.querySelector('.card-text').textContent.replace('R$', '').replace(',', '.'));
+  
+      // Se for ascendente (menor para maior)
+      if (sortOrder === 'asc') {
+        return priceA - priceB;
+      }
+  
+      // Se for descendente (maior para menor)
+      return priceB - priceA;
+    });
+  
+    // Remove todos os produtos do container
+    productContainer.innerHTML = '';
+  
+    // Adiciona os produtos ordenados de volta ao container
+    products.forEach(function(product) {
+      productContainer.appendChild(product);
+    });
+  });
 </script>
