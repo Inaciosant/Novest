@@ -1,12 +1,19 @@
 .card {
     border-style: groove;
     border-color: black;
-    width: 190px;
+    width: 100%;
     background: white;
-    padding: .4em;
-    border-radius: 6px;
-  }
   
+    border-radius: 6px;
+    margin-top: 10%;
+  }
+   body >.form-select{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+   }
   .card-image {
     background-color: rgb(236, 236, 236);
     width: 100%;

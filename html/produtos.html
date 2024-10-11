@@ -30,10 +30,12 @@
     </nav>
 
     <main class="pag-produtos">
-      <select id="sortOptions" class="form-select" style="width:50% ;
+      <select id="sortOptions" class="form-select" style="width:33% ;
+      margin-left: 33%;
+      margin-right: 33%;
       display: flex;
       justify-content: center;
-      align-items: center; margin-left: 25%;
+      align-items: center; 
       text-align: center;">
         <option value="asc">Ordenar por preço: Menor para Maior</option>
         <option value="desc">Ordenar por preço: Maior para Menor</option>
@@ -43,117 +45,284 @@
         display: flex;
         justify-content: center;
         align-items: center; margin-left: 25%;
-        text-align: center;"
+        text-align: center;
+        margin-top: 5%;"
+        
         >
       </div>
     </div>
 
-      <div class="container mt-3">
-        
+    <div class="container mt-3">
       <div class="row" id="productContainer">
-
-        <div class="col-6 col-lg-3">
-          <div class="card" style="width: 90%;">
-            <img src="/img/produtos/prod1.png" class="img-fluid" alt="...">
-            <div class="card-body" style="height: 40%;">
-              <h5 class="card-title">Mochila Masculina</h5>
-              <p class="card-text">R$ 169.99</p>
-              <a href="#" onclick="sendToWhatsApp ('xxxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-lg-3">
-          <div class="card"style="width: 90%;" >
-            <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Carteira Masculina </h5>
-              <p class="card-text">R$ 59.99</p>
-              <a href="#" onclick="sendToWhatsApp ('Carteira Masculina em couro (modelo 23)')"" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;" >COMPRAR</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-lg-3">
-          <div class="card" style="width: 90%;">
-            <img src="/img/produtos/mochilafotcafe.png" class="img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mochila De fotografo</h5>
-              <p class="card-text">R$ 599.99</p>
-              <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-lg-3">
-          <div class="card" style="width: 90%;">
-            <img src="/img/produtos/Mala1.png" class="img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mala de viagem</h5>
-              <p class="card-text">R$ 699.99</p>
-              <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-            </div>
-          </div>
-        </div>
-
-      <div class="row">
     
-
-        
-     
-  
-          <div class="col-6 col-lg-3">
-            <div class="card" style="width: 90%;">
-              <img src="/img/produtos/prod1.png" class="img-fluid" alt="...">
-              <div class="card-body" style="height: 40%;">
-                <h5 class="card-title">Mochila Masculina</h5>
-                <p class="card-text" id="valor">R$ 169.99</p>
-                <a href="#" onclick="sendToWhatsApp ('xxxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-              </div>
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8576.JPG" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">Mala de viagem preta</h5>
+              <p class="card-text">R$ 569.99</p>
+              <a href="#" onclick="sendToWhatsApp('Olá vi a mala de rodinha preta, tenho interesse nela, pode me falar mais sobre ela')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal1" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
             </div>
           </div>
-  
-          <div class="col-6 col-lg-3">
-            <div class="card"style="width: 90%;" >
-              <img src="/img/produtos/carteira.png" class="img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Carteira Masculina </h5>
-                <p class="card-text">R$ 19.99</p>
-                <a href="#" onclick="sendToWhatsApp ('Carteira Masculina em couro (modelo 23)')"" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;" >COMPRAR</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-6 col-lg-3">
-            <div class="card" style="width: 90%;">
-              <img src="/img/produtos/mochilafotcafe.png" class="img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mochila De fotografo</h5>
-                <p class="card-text">R$ 599.99</p>
-                <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-6 col-lg-3">
-            <div class="card" style="width: 90%;">
-              <img src="/img/produtos/Mala1.png" class="img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mala de viagem</h5>
-                <p class="card-text">R$ 699.99</p>
-                <a href="#" onclick="sendToWhatsApp ('XXXXXX (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
-              </div>
-            </div>
-          </div>
-  
         </div>
+    <!-- 1 -->
+        <div class="col-6 col-lg-3">
+          <div class="card"style="width: 90%;">
+            <img src="/img/produtos/DSC_8094.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Necessarie Preta</h5>
+              <p class="card-text">R$ 119.99</p>
+              <a href="#" onclick="sendToWhatsApp('Vi a necessarie preta e me interessei nela, pode me dar mais Detalhes')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal2" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    <!-- 2 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/Mala Marrom (2).JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mala em café modelo 2</h5>
+              <p class="card-text">R$ 599.99</p>
+              <a href="#" onclick="sendToWhatsApp('Mochila de fotografo (modelo X)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal3" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    <!--  3  -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8812.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mala de viagem Café </h5>
+              <p class="card-text">R$ 699.99</p>
+              <a href="#" onclick="sendToWhatsApp('Mala de viagem (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal4" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+<!-- 4 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8564.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mala de viagem COM rodinha Café</h5>
+              <p class="card-text">R$ 699.99</p>
+              <a href="#" onclick="sendToWhatsApp('Mala de viagem (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal4" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 5 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8572.JPG" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">Mala com rodinha para viagem - laranja</h5>
+              <p class="card-text">R$ 169.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal5" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 6 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8564.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">mala de viagem com rodinha marrom</h5>
+              <p class="card-text">R$ 599.99</p>
+              <a href="#" onclick="sendToWhatsApp('Carteira Masculina em couro (modelo 23)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal6" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 7 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8550.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mala cafe xxxxx</h5>
+              <p class="card-text">R$ 599.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal7" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 8 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8094.JPG" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Necessaire cor preta</h5>
+              <p class="card-text">R$ 119.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (modelo XX)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal8" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 9 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8121.JPG" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">mala em croco com rodinha</h5>
+              <p class="card-text">R$ 889.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal9" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 10 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/Mala Marrom (2).JPG" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">Mala de braço Marrom</h5>
+              <p class="card-text">R$ 599.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal10" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 11 -->
+        <div class="col-6 col-lg-3">
+          <div class="card" style="width: 90%;">
+            <img src="/img/produtos/DSC_8099.JPG" class="img-fluid" alt="...">
+            <div class="card-body" style="height: 40%;">
+              <h5 class="card-title">Necessaire Café</h5>
+              <p class="card-text">R$ 149.99</p>
+              <a href="#" onclick="sendToWhatsApp('xxxxx (xxxxxx)')" class="btn btn-primary" style="justify-content: center; display: flex; align-items: center;">COMPRAR</a>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal11" style="display: flex; justify-content: center; text-align: center; width: 100%; margin-top: 1%;">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+    
+    
+        <!-- Modals -->
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel1">Detalhes do Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Mala com rodinha preta</h6>
+                <p><strong>Preço:</strong> R$ 569.99</p>
+                <p><strong>Descrição:</strong> Mala de rodinha resistente, ideal para viagens curtas.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">Detalhes do Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>  Necessaire </h6>
+                <p><strong>Preço:</strong> R$ 169.99</p>
+                <p><strong>Descrição:</strong> Necessarie em couro legítimo, ideal para uso diário.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel3">Detalhes do Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Mala de viagem</h6>
+                <p><strong>Preço:</strong> R$ 599.99</p>
+                <p><strong>Descrição:</strong> mala de viagem, com vários compartimentos e resistência à água.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel4">Detalhes do Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Mala de viagem</h6>
+                <p><strong>Preço:</strong> R$ 699.99</p>
+                <p><strong>Descrição:</strong> Mala espaçosa e durável, ideal para viagens longas.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          
         </div>
       </div>
+        
+    
+    
+      </div>
+    </div>
+    
       
     </main>
 
-    
-        
+   
+
+
     </body>
     <script src="/js/index.js"></script>
 
@@ -179,11 +348,12 @@
 
     // Se o título do produto contém o valor da busca, mostramos o produto
     if (title.includes(searchQuery)) {
-      product.style.display = 'block'; // Mostra o produto
+      product.style.display = 'flex'; // Mostra o produto
     } else {
       product.style.display = 'none';
-       // Esconde o produto
+        // Esconde o produto
     }
+   
   });
 });
 </Script>

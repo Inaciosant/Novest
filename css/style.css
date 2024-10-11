@@ -85,6 +85,10 @@ h2{
   background: transparent;
   
 }
+.loja-virtual > a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
 
 .loja-virtual > button span {
   margin: 10px;
