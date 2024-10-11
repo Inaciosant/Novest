@@ -119,22 +119,7 @@
 
     
       <footer class=" text-white py-4" style="background-color: #231A18; margin-top: 3%;" > 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Sobre Nós</h5>
-                    <p>Fundada em 2019, nossa empresa se dedica à criação de peças masculinas em couro natural de alta qualidade, combinando tradição e inovação para o homem moderno.</p>
-                </div>
-              
-                <div class="col-md-4">
-                    <h5>Endereço</h5>
-                    <p>
-                      R. Marco Aurélio de Luca - Parque Progresso, Franca - SP, 14403-081 <br>
-                        Email: contato@empresa.com<br>
-                        Telefone: (16) 99308-6656
-                    </p>
-                </div>
-            </div>
+    
             <div class="text-center mt-4">
                 <p>&copy; 2024 Novest couros. Todos os direitos reservados.</p>
             </div>
@@ -180,4 +165,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script>$('.carousel').carousel({
   interval: 2
-})</script>
+})
+ 
+function addFooter() {
+  const footerHTML = `
+      <footer class="text-white py-4" style="background-color: #231A18; margin-top: 3%;">
+          <div class="text-center mt-4">
+              <p>&copy; 2024 Novest Couros. Todos os direitos reservados.</p>
+          </div>
+      </footer>
+  `;
+  document.body.insertAdjacentHTML('beforeend', footerHTML);
+}
+</script>
